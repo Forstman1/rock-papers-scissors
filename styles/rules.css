@@ -1,0 +1,81 @@
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+
+#paper {
+	display: grid;
+	width: 150px;
+	background-color: white;
+	height: 150px;
+	border-radius: 50%;
+	justify-items: center;
+	border: 25px solid hsl(230, 89%, 65%);
+	animation: rotation 1.5s infinite linear;
+	cursor: pointer;
+}
+
+#paper-image {
+	position: relative;
+	top: 29%;
+}
+
+#scissors {
+	display: grid;
+	width: 150px;
+	background-color: white;
+	height: 150px;
+	border-radius: 50%;
+	justify-items: center;
+	text-align: center;
+	border: 25px solid hsl(40, 84%, 53%);
+	animation: rotation 1.5s infinite linear;
+	cursor: pointer;
+}
+
+#scissors-image {
+	position: relative;
+	top: 29%;
+}
+
+#rock {
+	display: grid;
+	float: right;
+	width: 150px;
+	background-color: white;
+	height: 150px;
+	border-radius: 50%;
+	justify-items: center;
+	text-align: center;
+	border: 25px solid hsl(349, 70%, 56%);
+	animation: rotation 1.5s infinite linear;
+	cursor: pointer;
+}
+
+#rock-image {
+	position: relative;
+	top: 29%;
+}
+
+#rock:hover {
+	transition: 2s;
+	opacity: 0.8;
+}
+#paper:hover {
+	transition: 2s;
+	opacity: 0.8;
+}
+#scissors:hover {
+	transition: 2s;
+	opacity: 0.8;
+}
+
+#box1 {
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+}
