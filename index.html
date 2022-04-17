@@ -14,21 +14,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;700&display=swap" rel="stylesheet">
 	<title>Frontend Mentor | Rock, Paper, Scissors</title>
-	<!-- Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again -->
-
-
 </head>
 
 <body>
+	<div id="rules-page"></div>
+
 	<div class="big-bar">
 		<div id="bar">
 			<div id="title">ROCK <br>PAPER <br>SCISSORS</div>
@@ -58,22 +48,34 @@
 		</div>
 	</div>
 	<div id="combat">
-		<div id="my-pick">
-			<div id="paper-image">
-				<img src="images/icon-paper.svg" alt="paper">
+		<div id="fonts">YOUR PICK
+			<div id="my-pick"><img id="scissors-image" src="images/icon-scissors.svg" alt="scissors">
 			</div>
 		</div>
 		<div id="state">
 			<div id="result">YOU WON</div>
 			<button id="play-again">PLAY AGAIN</button>
 		</div>
-		<div id="house-pick">
-			<div id="scissors-image">
-				<img src="images/icon-scissors.svg" alt="scissors">
+		<div id="fonts">HOUSE PICK
+			<div id="house-pick">
+				<img id="scissors-image" src="images/icon-scissors.svg" alt="scissors">
 			</div>
 		</div>
 	</div>
-	<script src="js/app.js"></script>
+	<div id="rule-box">
+		<div id="text-above">
+			<div style="text-align: center; font-size: 28px; font-weight: 1000;">RULES</div>
+			<div id="icon-close">
+				<img src="images/icon-close.svg" alt="close">
+			</div>
+		</div>
+		<div id="rule-image"><img src="images/image-rules.svg" alt="rules"></div>
+	</div>
+	<button id="rules">RULES</button>
+	<script src="js/paper.js"></script>
+	<script src="js/rock.js"></script>
+	<script src="js/scissors.js"></script>
+	<script src="js/var.js"></script>
 </body>
 
 </html>
