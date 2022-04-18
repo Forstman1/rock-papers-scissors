@@ -1,12 +1,12 @@
 #combat {
-	display: none;
+	display: flex;
 	gap: 70px;
 	justify-content: center;
 	width: 100%;
 	height: 500px;
 }
 
-#my-pick {
+.my-pick {
 	display: grid;
 	width: 200px;
 	background-color: white;
@@ -21,12 +21,11 @@
 
 #state {
 	display: grid;
-	grid-template-columns: repeat(1, 100%);
 	align-items: center;
 	justify-content: center;
 }
 
-#house-pick {
+.house-pick {
 	display: grid;
 	width: 200px;
 	background-color: white;
@@ -48,7 +47,7 @@
 	box-shadow: inset 3px 15px 6px gray;
 }
 
-#result {
+.result {
 	text-align: center;
 	color: white;
 	width: 120%;
@@ -56,7 +55,7 @@
 	font-weight: 1000;
 }
 
-#play-again {
+.play-again {
 	text-align: center;
 	background-color: white;
 	border: none;
@@ -73,7 +72,7 @@
 	background-color: black;
 }
 
-#fonts {
+.fonts {
 	color: white;
 	text-align: center;
 	font-size: 30px;

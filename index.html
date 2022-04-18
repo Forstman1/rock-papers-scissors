@@ -8,6 +8,7 @@
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/mediaquerie.css">
 	<link rel="stylesheet" href="styles/combat.css">
 	<link rel="stylesheet" href="styles/rules.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,34 +31,34 @@
 	</div>
 	<div id="big-container">
 		<div id="box1">
-			<div id="paper">
+			<div id="paper" class="paper">
 				<div id="paper-image">
 					<img src="images/icon-paper.svg" alt="paper">
 				</div>
 			</div>
-			<div id="scissors">
+			<div id="scissors" class="scissors">
 				<div id="scissors-image">
 					<img src="images/icon-scissors.svg" alt="scissors">
 				</div>
 			</div>
 		</div>
-		<div id="rock">
+		<div id="rock" class="rock">
 			<div id="rock-image">
 				<img id="icon-rock" src="images/icon-rock.svg" alt="rock">
 			</div>
 		</div>
 	</div>
 	<div id="combat">
-		<div id="fonts">YOUR PICK
-			<div id="my-pick"><img id="scissors-image" src="images/icon-scissors.svg" alt="scissors">
+		<div class="fonts" id="fonts">YOUR PICK
+			<div id="my-pick" class="my-pick"><img id="scissors-image" src="images/icon-scissors.svg" alt="scissors">
 			</div>
 		</div>
 		<div id="state">
-			<div id="result">YOU WON</div>
-			<button id="play-again">PLAY AGAIN</button>
+			<div id="result" class="result">YOU WON</div>
+			<button id="play-again" class="play-again">PLAY AGAIN</button>
 		</div>
-		<div id="fonts">HOUSE PICK
-			<div id="house-pick">
+		<div class="fonts" id="fonts">HOUSE PICK
+			<div id="house-pick" class="house-pick">
 				<img id="scissors-image" src="images/icon-scissors.svg" alt="scissors">
 			</div>
 		</div>
@@ -71,7 +72,7 @@
 		</div>
 		<div id="rule-image"><img src="images/image-rules.svg" alt="rules"></div>
 	</div>
-	<button id="rules">RULES</button>
+	<button id="rules" class="rules">RULES</button>
 	<script src="js/paper.js"></script>
 	<script src="js/rock.js"></script>
 	<script src="js/scissors.js"></script>
